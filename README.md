@@ -1,9 +1,7 @@
 ### Date created
-Include the date you created this project and README file.
-
+Jan 19, 2020
 ### Project Title
-Replace the Project Title
-
+The Analysis of Bikeshare data
 ### Description
 Describe what your project is about and what it does
 
