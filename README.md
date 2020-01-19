@@ -19,6 +19,8 @@ new_york_city.csv
 ### Credits
 
 https://www.youtube.com/watch?v=bF-FfYwpTEg
+
 https://www.youtube.com/watch?v=yCgJGsg0Xa4
+
 https://pandas.pydata.org/pandas-docs/stable/reference/index.html
 
