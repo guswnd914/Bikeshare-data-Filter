@@ -2,6 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 
+
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -23,21 +24,21 @@ def get_filters():
         print('Wrong city. Do it again')
         city = input('Which city? :')
         city = city.lower()
-       
+
     month = input("Which month? ex. january, march; \nIf you want all month, please type 'all'.\n : ")
     month = month.lower()
     while month not in ['all', 'january', 'february', 'march','april','may','june']:
         print('Wrong month. Do it again.')
         month = input('Which month? : ')
         month = month.lower()
-            
+
     day = input("Which day? ex. monday, wednesday;\nif you want all day, please type 'all'.\n : ")
     day = day.lower()
     while day not in ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'] :
         print('Wrong day. Do it again.')
         day = input('Which day? :')
         day = day.lower()
-        
+
     print('-'*40)
     return city, month, day
 
@@ -59,9 +60,9 @@ def load_data(city, month, day):
         df = pd.read_csv('new_york_city.csv')
     else:
         df = pd.read_csv('washington.csv')
-        
+
     df['Start Time'] = pd.to_datetime(df['Start Time'])
-    
+
     if month != 'all':
         months = ['january','february','march','april','may','june']
         month1 = months.index(month) + 1
@@ -88,7 +89,6 @@ def time_stats(df):
 
     # TO DO: display the most common start hour
     print('The most common start hour is :', df['Start Time'].dt.hour.mode()[0])
-    print()
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
@@ -164,8 +164,8 @@ def display_data(file):
         asking = input("More data? yes or no?")
         asking = asking.lower()
         x += 5
-        
-        
+
+
 def main():
     while True:
         city, month, day = get_filters()
@@ -175,7 +175,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-        
+
         display_data(df)
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
