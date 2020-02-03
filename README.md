@@ -5,12 +5,15 @@ Jan 19, 2020
 
 ### Project Title
 
-The Analysis of Bikeshare data
+Filter Analysis of Bikeshare Data
 
 
 ### Description
 
-This project filters the data by three cities(chicago, new york city, washington), by month, and by day, and calculates general statistics within the filtered data.
+This project aims to filter the Bikeshare Data through asking three questions : Which city? Which month? and Which day?
+These questions are asked by input and user just has to answer the questions.
+When the the answer is not appropriate, it is programmed to requestion.
+Enjoy!
 
 
 ### Files used
