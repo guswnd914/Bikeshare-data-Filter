@@ -5,12 +5,18 @@ Jan 19, 2020
 
 ### Project Title
 
-Filter Analysis of Bikeshare Data
+Bikeshare Data Filter
 
 
 ### Description
 
-This project aims to filter the Bikeshare Data through asking three questions : Which city? Which month? and Which day?
+This project aims to filter the Bikeshare Data through asking three questions :
+Q: Which city?
+
+Q: Which month?
+
+Q: Which day?
+
 These questions are asked by input and user just has to answer the questions.
 When the the answer is not appropriate, it is programmed to requestion.
 Enjoy!
