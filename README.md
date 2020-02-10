@@ -1,12 +1,8 @@
+# Bikeshare Data Filter
+
 ### Date created
 
 Jan 19, 2020
-
-
-### Project Title
-
-Bikeshare Data Filter
-
 
 ### Description
 
